@@ -1,0 +1,129 @@
+/* eslint-disable object-shorthand, prefer-template, func-names */
+// Isolates configuration to allow including several SDKs on the same page.
+(function () {
+  /*--------------------------------------------------
+ |                    CONFIGURATION
+ |                     Credentials
+ |---------------------------------------------------
+ |
+ | Contains credentials and options for all authorized domains.
+ |
+ */
+  const sdkCredentials = {
+    environment: 'production',
+    kmInbentaKey: 'BZ34HK8p4jvz3E4IQWe1GXwu0iNPIr+LmAalSoI1Nio=', // Remove this line if KM SDK is not used.
+    domains: {
+      default: {
+        accessToken: 'eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFMyNTYifQ.eyJwcm9qZWN0IjoibGFwb3N0ZV9mcl9rbV9mciIsInNhbHQiOiJCWjM0SEtcL0lqRUxYamJFXC9wUm9sWUE9PSIsImtleSI6IkJaMzRISzhwNGp2ejNFNElRV2UxR1h3dTBpTlBJcitMbUFhbFNvSTFOaW89IiwiaWF0IjoxNjY1MjkwMjM3LCJleHAiOjE2NjUyOTE0Mzd9.xl3zMXH6HbBTnRc038JQz32VvTm8IcPsxIz_tRw4opA',
+        appId: 'inbenta_app_production',
+        assetsBaseUrl: 'https://lapostfrfr-cmpgnweb-wbst-prd.herokuapp.com/',
+      },
+    },
+  };
+//
+//
+  /*--------------------------------------------------
+ |                    CONFIGURATION
+ |                        Main
+ |---------------------------------------------------
+ |
+ | Main configuration of the Inbenta application.
+ |
+ |
+ */
+  const hostname = window.location.host || window.location.hostname;
+  const domain = (sdkCredentials.domains[hostname] !== undefined) ? hostname : 'default';
+//
+  /**
+ * KM SDK configuration - remove this object if KM SDK is not used.
+ */
+  const inbKmApp = {
+    sdkIntegration: {
+    // If you wish to change the SDK version, please mind to update the SDK integrity hash.
+    // https://developers.inbenta.io/knowledge-management/javascript-sdk/sdk-subresource-integrity
+      version: '1.35.0',
+      integrity: 'sha384-Dpa78A7IznpwGip3U2SASQnilPyaR5rbVCwsfD3hmiyU6/vxuB50TgFHuY05FF6v',
+      assetsBaseUrl: sdkCredentials.domains[domain].assetsBaseUrl,
+    },
+    sdkAuth: {
+      inbentaKey: sdkCredentials.kmInbentaKey,
+      accessToken: sdkCredentials.domains[domain].accessToken,
+    },
+    // Inbenta KM SDK configuration <https://developers.inbenta.io/>
+    sdkConfig: {
+    // Environments => "production" / "preproduction" / "development"
+      environment: sdkCredentials.environment,
+      // KM application specific ID
+      kmId: sdkCredentials.domains[domain].appId,
+      // Whether to log the user's IP in user info
+      logIp: false,
+      // Whether to log the user's user agent in user info
+      logUserAgent: true,
+      // KM labels
+      labels: {
+        REFRESH_TITLE: 'Oooops… !',
+        REFRESH_INVALID_ACCESS_TOKEN: 'Quelque chose s\'est mal passé. Merci de rafraîchir la page.',
+        REFRESH_BUTTON: 'Rafraîchir',
+      },
+      // Most of the HTML tags are not filtered by default, to allow user to write rich contents
+      sanitizeOptions: {
+        allowedTags: [
+          'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote', 'p', 'a', 'ul', 'ol',
+          'nl', 'li', 'b', 'i', 'strong', 'em', 'strike', 'code', 'hr', 'br', 'div',
+          'table', 'thead', 'caption', 'tbody', 'tr', 'th', 'td', 'pre', 'img',
+          'iframe', 'svg', 'polygon', 'span', 'u',
+        ],
+        allowedAttributes: {
+          a: ['href', 'name', 'target', 'class'],
+          iframe: ['src', 'allow', 'allowfullscreen', 'frameborder', 'height', 'width'],
+          img: ['src'],
+          svg: ['height', 'width', 'style', 'step'],
+          polygon: ['points'],
+          span: ['data-index', 'class', 'style'],
+          div: ['class', 'style'],
+          p: ['style'],
+          i: ['class'],
+        },
+      },
+    },
+    // Inbenta application custom configuration
+    appConfig: {},
+  };
+
+  // Inbenta routes - Relative paths where the CSS and JS are hosted
+
+  const baseFileName = sdkCredentials.environment === 'development' ? 'inbenta-core' : 'inbenta-core.min';
+
+  const inbKmSearchPaths = {
+    css: sdkCredentials.domains[domain].assetsBaseUrl + 'assets/css/' + baseFileName + '.css',
+    js: sdkCredentials.domains[domain].assetsBaseUrl + 'assets/js/' + baseFileName + '.js',
+  };
+//
+//
+  /*
+|--------------------------------------------------
+|                   Starting SDK
+|---------------------------------------------------
+|
+| >> WARNING!
+|
+| Load & trigger JS & CSS core. Please, be carefull if
+| you want to modify this section.
+|
+*/
+//
+  // Attach configuration to the window
+  window.inbKmAppSdk = inbKmApp;
+//
+  // Create CSS core file
+  const inbScriptCSS = document.createElement('link');
+  inbScriptCSS.rel = 'stylesheet';
+  inbScriptCSS.type = 'text/css';
+  inbScriptCSS.href = inbKmSearchPaths.css;
+  document.head.appendChild(inbScriptCSS);
+//
+  // Create JS core file
+  const inbScriptJS = document.createElement('script');
+  inbScriptJS.src = inbKmSearchPaths.js;
+  document.head.appendChild(inbScriptJS);
+}());

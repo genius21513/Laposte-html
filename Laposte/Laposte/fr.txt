@@ -1,0 +1,20 @@
+I'll give you the details and reference website.And you need to start working right away, preferably as a team
+Don't waste each other's time if you can't start right away.From page one to page three, the top and bottom of the page are the same, only the middle content needs to be changed.
+So the main development page is the last page and the first page
+It's a very simple four pages of static php source code
+I need to finish everything six hours from now.
+
+
+https://www.laposte.fr/outils/suivre-vos-envois
+
+
+
+Merci pour votre commande 
+
+Vous allez recevoir un e-mail de confirmation ainsi que votre facture à l'adresse suivante : tunimaup@outlook.com 
+Les détails de votre commande n° 1153339836 et de la livraison sont également disponibles dans votre Espace client. 
+Moyen de paiement utilisé : Carte bancaire 
+-Pb La Poste 1 article 
+Commande n° 1153339836 Total HT : 3,75 € NA : 0,75 € Total TTC : 4,50 € Télécharger la facture en PDF 
+
+

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<!-- saved from url=(0198)https://moncompte.laposte.fr/moncompte-auth/auth/realms/mon-compte/login-actions/required-action?execution=mon_compte_at_connect_success&client_id=8e43f72a1f94ab61b909fa49548c800d&tab_id=fe66hlFQdxw -->
+<html style="--vh:8.89px;" data-lt-installed="true">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" class="next-head">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <script charset="utf-8" rel="preload">
+        window.flash = {};
+        document.documentElement.style.setProperty('--vh', window.innerHeight * .01 + 'px');
+        window.addEventListener('resize', function () {
+            document.documentElement.style.setProperty('--vh', window.innerHeight * .01 + 'px')
+        });
+    </script>
+    <script charset="utf-8" rel="preload">
+        window.keycloak = {
+            url: {
+                send: 'https://moncompte.laposte.fr/moncompte-auth/auth/realms/mon-compte/login-actions/required-action?session_code=qXrlQLGtGmD2VHKgXRK4aaj_ptwh4lJXDtH6sbXTZS4&execution=mon_compte_collect_address&client_id=8e43f72a1f94ab61b909fa49548c800d&tab_id=fe66hlFQdxw',
+                apiAddresseGouvBaseUrl: 'https://api-adresse.data.gouv.fr'
+            },
+            string: {
+                legalResume: 'Vos données sont collectées par La Poste pour assurer la gestion de votre Compte La Poste, le bon fonctionnement de vos services, la gestion de vos achats et contrats, la distribution de vos envois postaux et l\u0027animation commerciale. Pour plus d\u0027informations sur vos données et vos droits, voir le <u><a target=_blank href=https://www.laposte.fr/mentions-informations-a-l-inscription>traitement de vos données personnelles</a></u>.',
+                addAddressDelivery: 'Instructions pour la livraison',
+                addAddressName: 'Nom de l\u0027adresse',
+                addAddressErrorFullname: 'Veuillez saisir des lettres ou les caractères spéciaux \u0027-',
+                addAddressErrorZipCodeMaxCharacters: 'Veuillez saisir au minimum 5 caractères.',
+                addAddressErrorOnlyDigit: 'Veuillez saisir des caractères numériques.',
+                addAddressErrorString: 'Veuillez saisir des lettres, des chiffres ou les caractères spéciaux \u0027 . -',
+                addAddressErrorDelivery: 'Veuillez saisir des lettres, des chiffres ou les caractères spéciaux \u0027 - . / & % @',
+                addAddressFullnamePlaceholder: 'Mme/M. Prénom Nom',
+                addAddressStreetPlaceholder: 'N° et libellé de voie',
+                addAddressAddressNotInTheList: 'Mon adresse n\u0027est pas dans la liste',
+                addAddressZipcodePlaceholder: 'Code postal',
+                addAddressLocalityPlaceholder: 'Ville',
+                addAddressAdditionalPlaceholder: 'Lieu-dit ou boîte postale <small class=optional>(facultatif)</small>',
+                addAddressCountryPlaceholder: 'Pays',
+                addAddressBuildingPlaceholder: 'Bâtiment, résidence <small class=optional>(facultatif)</small>',
+                addAddressFloorPlaceholder: 'Appartement, étage <small class=optional>(facultatif)</small>',
+                addAddressDigicodePlaceholder: 'Digicode, gardien... <small class=optional>(facultatif)</small>',
+                addAddressTitlePlaceholder: 'Maison, bureau... <small class=optional>(facultatif)</small>',
+                addAddressInfoBox: 'Votre adresse postale est nécessaire pour ce service',
+                identityOfTheRecipient: 'Identité du destinataire ou du service',
+                companyNamePlaceHolder: 'Nom de la société',
+                personal: 'Personnelle',
+                professional: 'Professionnelle',
+                personalInformation: 'Informations personnelles',
+                professionalInformation: 'Informations de société',
+                chooseTypeAddressSubTitle: 'Type d\u0027adresse',
+                save: 'Enregistrer'
+            },
+            form: {
+                fullname: '',
+                company: '',
+                identity: '',
+                street: '',
+                zipcode: '',
+                locality: '',
+                typeAddress: '',
+                collectAddressLogin: 'part',
+                additional: '',
+                country: '',
+                countryName: '',
+                countryCode: '',
+                building: '',
+                floor: '',
+                digicode: '',
+                title: ''
+            }
+        };
+    </script>
+
+    <title> Se connecter à laposte.fr </title>
+    <link rel="icon"
+        href="https://moncompte.laposte.fr/moncompte-auth/auth/resources/nyi1u/login/moncompte/assets/favicon.ico">
+    <!-- <link rel="stylesheet" href="./Se connecter à laposte.fr_files/css"> -->
+    <link rel="stylesheet" href="./Se connecter à laposte.fr_files/commons.31b86f4d6698ea09afff.css">
+</head>
+
+<body class="page legalResume add-address">
+    <script type="text/javascript" async="" src="./Se connecter à laposte.fr_files/privacy_v2_16.js.download"
+        charset="utf-8" id="tc_script_0.9427988392275306"></script>
+    <script type="text/javascript" async="" src="./Se connecter à laposte.fr_files/tcfapi.js.download" charset="utf-8"
+        id="tc_script_0.11903774532912914"></script>
+
+    <script>
+        var foreign_tc_vars = {
+            xtn2_accostant: "2",
+            xiti_xtn2: "2",
+            page_type: "connexion",
+            chapitre1: "connexion",
+            chapitre2: "add_address",
+            chapitre3: "",
+            page_name: 'connexion_add_address_' + 'part'
+        };
+    </script>
+    <iframe id="frame-tc" src="./Se connecter à laposte.fr_files/tc.html"
+        style="position: absolute; width:0; height:0; border:0;"></iframe>
+    <!-- DataLayer -->
+    <script type="text/javascript" src="./Se connecter à laposte.fr_files/polyfill.js.download"></script>
+    <script type="text/javascript">
+        window.mobilecheck = function () {
+            var check = false;
+            (function (a) { if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true; })(navigator.userAgent || navigator.vendor || window.opera);
+            return check;
+        };
+
+        window.getParameterByName = function (name) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(window.location.href);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        };
+
+        // @TODO : A implémenter côté JAVA, les 2 valeurs acceptées sont 'prod' et 'recette'
+        var env = "prod";
+        var tagCommanderIframeSrc = "https://cdn.tagcommander.com/4589/tc_MireMonCompte_24.js";
+        var xiti_xtsite = env === 'prod' ? '581211' : '581209';
+        var locale = 'Français' === 'Français' ? 'fr' : 'en';
+        var tc_vars = {
+            client_id: getParameterByName('client_id'),
+            xiti_xtsite: xiti_xtsite,
+            env_channel: mobilecheck() ? "web_mobile" : "web",
+            type_template: "compte",
+            env_work: env,
+            langue: locale,
+            partenaire: '',
+            contexte_accostant: "",
+            version_utilisee: "V3",
+            nom_site: "Part",
+            is_pro: "false"
+        };
+
+        tc_vars = foreign_tc_vars !== undefined ? Object.assign({}, tc_vars, foreign_tc_vars) : tc_vars;
+        const frame_tc = document.getElementById('frame-tc');
+        frame_tc.onload = function () { frame_tc.contentWindow.postMessage({ tc_vars, tagCommanderIframeSrc }, "*"); };
+    </script>
+    <script type="text/javascript" src="./Se connecter à laposte.fr_files/tc_MireMonCompte_20.js.download"></script>
+    <!-- End DataLayer -->
+    <div class="overlay"></div>
+    <main class="container" role="main">
+        <div class="screen">
+            <header class="screen-header">
+                <div class="logo-wrapper">
+                    <img class="logo"
+                        src="./Se connecter à laposte.fr_files/la-poste-logo.595ac91ed33abc8ff13cae92b7349a82.svg"
+                        alt="la poste">
+                </div>
+                <h1>Renseignez votre adresse postale</h1>
+                <div class="title-end-line">&nbsp;</div>
+            </header>
+            <div id="add-address-form" class="screen-body">
+                <div class="form">
+                    <form method="post" class="form form-undefined"
+                        action="https://moncompte.laposte.fr/moncompte-auth/auth/realms/mon-compte/login-actions/required-action?session_code=qXrlQLGtGmD2VHKgXRK4aaj_ptwh4lJXDtH6sbXTZS4&amp;execution=mon_compte_collect_address&amp;client_id=8e43f72a1f94ab61b909fa49548c800d&amp;tab_id=fe66hlFQdxw"
+                        novalidate="">
+                        <div class="form-body">
+                            <div class="info-box info">
+                                <div class="box-wrapper">
+                                    <div class="pic">
+                                        <p class="ic-info"></p>
+                                    </div>
+                                    <p class="box-description" id="boxDescription">Votre adresse postale est
+                                        nécessaire pour ce service</p>
+                                </div>
+                            </div>
+                            <p class="subtitle display-none">Type d'adresse</p>
+                            <div class="switch-button display-none"><input type="checkbox" id="switch"><label
+                                    for="switch">
+                                    <div class="toggle"></div>
+                                    <div class="names">
+                                        <p class="personal">Personnelle</p>
+                                        <p class="professional">Professionnelle</p>
+                                    </div>
+                                </label></div>
+                            <p class="subtitle">Informations personnelles</p>
+                            <div class="input "><input class="  hide-error" type="text" name="fullname"
+                                    id="fullname" aria-required="true" autocapitalize="none" value=""><span
+                                    class="hide-error" id="">Mme/M. Prénom Nom</span></div>
+                            <div class="input  display-none"><input class="  hide-error" type="text"
+                                    name="company" id="company" aria-required="true" autocapitalize="none"
+                                    value=""><span class="hide-error" id="">Nom de la société</span></div>
+                            <div class="input  display-none"><input class="  hide-error" type="text"
+                                    name="identity" id="identity" aria-required="true" autocapitalize="none"
+                                    value=""><span class="hide-error" id="">Identité du destinataire ou du
+                                    service</span></div>
+                            <div class="input"><input class="  hide-error" type="text" aria-required="true"
+                                    name="street" id="street" autocapitalize="none" value=""><span
+                                    class="hide-error" id="">N° et libellé de voie</span></div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="input"><input class="  hide-error" type="text"
+                                            aria-required="true" name="zipcode" id="zipcode"
+                                            autocapitalize="none" value=""><span class="hide-error" id="">Code
+                                            postal</span></div>
+                                </div>
+                                <div class="col">
+                                    <div class="input"><input class="  hide-error" type="text"
+                                            aria-required="true" name="locality" id="locality"
+                                            autocapitalize="none" value=""><span class="hide-error"
+                                            id="">Ville</span></div>
+                                </div>
+                            </div>
+                            <div class="input "><input class="  hide-error" type="text" name="additional"
+                                    id="additional" aria-required="false" autocapitalize="none" value=""><span
+                                    class="hide-error" id="">Lieu-dit ou boîte postale <small
+                                        class="optional">(facultatif)</small></span></div>
+                            <div class="input input-select "><select id="country" name="country">
+                                    <option></option>
+                                    <option value="AF">Afghanistan</option>
+                                    <option value="ZA">Afrique du Sud</option>
+                                    <option value="AX">Åland</option>
+                                    <option value="AL">Albanie</option>
+                                    <option value="DZ">Algérie</option>
+                                    <option value="DE">Allemagne</option>
+                                    <option value="AD">Andorre</option>
+                                    <option value="AO">Angola</option>
+                                    <option value="AI">Anguilla</option>
+                                    <option value="AQ">Antarctique</option>
+                                    <option value="AG">Antigua-et-Barbuda</option>
+                                    <option value="SA">Arabie Saoudite</option>
+                                    <option value="AR">Argentine</option>
+                                    <option value="AM">Arménie</option>
+                                    <option value="AW">Aruba</option>
+                                    <option value="AU">Australie</option>
+                                    <option value="AT">Autriche</option>
+                                    <option value="AZ">Azerbaïdjan</option>
+                                    <option value="BS">Bahamas</option>
+                                    <option value="BH">Bahreïn</option>
+                                    <option value="BD">Bangladesh</option>
+                                    <option value="BB">Barbade</option>
+                                    <option value="BE">Belgique</option>
+                                    <option value="BZ">Belize</option>
+                                    <option value="BJ">Bénin</option>
+                                    <option value="BM">Bermudes</option>
+                                    <option value="BT">Bhoutan</option>
+                                    <option value="BY">Biélorussie</option>
+                                    <option value="BO">Bolivie</option>
+                                    <option value="BQ">Bonaire, Saint-Eustache et Saba</option>
+                                    <option value="BA">Bosnie-Herzégovine</option>
+                                    <option value="BW">Botswana</option>
+                                    <option value="BR">Brésil</option>
+                                    <option value="BN">Brunei Darussalam</option>
+                                    <option value="BG">Bulgarie</option>
+                                    <option value="BF">Burkina Faso</option>
+                                    <option value="BI">Burundi</option>
+                                    <option value="KH">Cambodge</option>
+                                    <option value="CM">Cameroun</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="CV">Cap-Vert</option>
+                                    <option value="CL">Chili</option>
+                                    <option value="CN">Chine</option>
+                                    <option value="CY">Chypre</option>
+                                    <option value="CO">Colombie</option>
+                                    <option value="KM">Comores</option>
+                                    <option value="KP">Corée du Nord</option>
+                                    <option value="KR">Corée du Sud</option>
+                                    <option value="CR">Costa Rica</option>
+                                    <option value="CI">Côte-d'Ivoire</option>
+                                    <option value="HR">Croatie</option>
+                                    <option value="CU">Cuba</option>
+                                    <option value="CW">Curaçao</option>
+                                    <option value="DK">Danemark</option>
+                                    <option value="DJ">Djibouti</option>
+                                    <option value="DM">Dominique</option>
+                                    <option value="EG">Égypte</option>
+                                    <option value="SV">El Salvador</option>
+                                    <option value="AE">Émirats Arabes Unis</option>
+                                    <option value="EC">Équateur</option>
+                                    <option value="ER">Érythrée</option>
+                                    <option value="ES">Espagne</option>
+                                    <option value="EE">Estonie</option>
+                                    <option value="US">États-Unis d'Amérique</option>
+                                    <option value="ET">Éthiopie</option>
+                                    <option value="FJ">Fidji</option>
+                                    <option value="FI">Finlande</option>
+                                    <option value="FR">France</option>
+                                    <option value="GA">Gabon</option>
+                                    <option value="GM">Gambie</option>
+                                    <option value="GE">Géorgie</option>
+                                    <option value="GS">Géorgie du Sud-et-les Îles Sandwich du Sud</option>
+                                    <option value="GH">Ghana</option>
+                                    <option value="GI">Gibraltar</option>
+                                    <option value="GR">Grèce</option>
+                                    <option value="GD">Grenade</option>
+                                    <option value="GL">Groenland</option>
+                                    <option value="GP">Guadeloupe</option>
+                                    <option value="GU">Guam</option>
+                                    <option value="GT">Guatemala</option>
+                                    <option value="GG">Guernesey</option>
+                                    <option value="GN">Guinée</option>
+                                    <option value="GQ">Guinée équatoriale</option>
+                                    <option value="GW">Guinée-Bissau</option>
+                                    <option value="GY">Guyana</option>
+                                    <option value="GF">Guyane française</option>
+                                    <option value="HT">Haïti</option>
+                                    <option value="HN">Honduras</option>
+                                    <option value="HK">Hong Kong</option>
+                                    <option value="HU">Hongrie</option>
+                                    <option value="BV">Île Bouvet</option>
+                                    <option value="CX">Île Christmas</option>
+                                    <option value="IM">Île de Man</option>
+                                    <option value="NF">Île Norfolk</option>
+                                    <option value="KY">Îles Caïmans</option>
+                                    <option value="CC">Îles Cocos</option>
+                                    <option value="CK">Îles Cook</option>
+                                    <option value="FO">Îles Féroé</option>
+                                    <option value="HM">Îles Heard-et-MacDonald</option>
+                                    <option value="FK">Îles Malouines</option>
+                                    <option value="MP">Îles Mariannes du Nord</option>
+                                    <option value="MH">Îles Marshall</option>
+                                    <option value="UM">Îles mineures éloignées des États-Unis</option>
+                                    <option value="PN">Îles Pitcairn</option>
+                                    <option value="SB">Îles Salomon</option>
+                                    <option value="TC">Îles Turques-et-Caïques</option>
+                                    <option value="VI">Îles vierges américaines</option>
+                                    <option value="VG">Îles vierges britanniques</option>
+                                    <option value="IN">Inde</option>
+                                    <option value="ID">Indonésie</option>
+                                    <option value="IQ">Irak</option>
+                                    <option value="IR">Iran</option>
+                                    <option value="IE">Irlande</option>
+                                    <option value="IS">Islande</option>
+                                    <option value="IL">Israël</option>
+                                    <option value="IT">Italie</option>
+                                    <option value="JM">Jamaïque</option>
+                                    <option value="JP">Japon</option>
+                                    <option value="JE">Jersey</option>
+                                    <option value="JO">Jordanie</option>
+                                    <option value="KZ">Kazakhstan</option>
+                                    <option value="KE">Kenya</option>
+                                    <option value="KG">Kirghizistan</option>
+                                    <option value="KI">Kiribati</option>
+                                    <option value="XK">Kosovo</option>
+                                    <option value="KW">Koweït</option>
+                                    <option value="LA">Laos</option>
+                                    <option value="LS">Lesotho</option>
+                                    <option value="LV">Lettonie</option>
+                                    <option value="LB">Liban</option>
+                                    <option value="LR">Libéria</option>
+                                    <option value="LY">Libye</option>
+                                    <option value="LI">Liechtenstein</option>
+                                    <option value="LT">Lituanie</option>
+                                    <option value="LU">Luxembourg</option>
+                                    <option value="MO">Macao</option>
+                                    <option value="MK">Macédoine du Nord</option>
+                                    <option value="MG">Madagascar</option>
+                                    <option value="MY">Malaisie</option>
+                                    <option value="MW">Malawi</option>
+                                    <option value="MV">Maldives</option>
+                                    <option value="ML">Mali</option>
+                                    <option value="MT">Malte</option>
+                                    <option value="MA">Maroc</option>
+                                    <option value="MQ">Martinique</option>
+                                    <option value="MU">Maurice</option>
+                                    <option value="MR">Mauritanie</option>
+                                    <option value="YT">Mayotte</option>
+                                    <option value="MX">Mexique</option>
+                                    <option value="FM">Micronésie</option>
+                                    <option value="MD">Moldavie</option>
+                                    <option value="MC">Monaco</option>
+                                    <option value="MN">Mongolie</option>
+                                    <option value="ME">Monténégro</option>
+                                    <option value="MS">Montserrat</option>
+                                    <option value="MZ">Mozambique</option>
+                                    <option value="MM">Myanmar</option>
+                                    <option value="NA">Namibie</option>
+                                    <option value="NR">Nauru</option>
+                                    <option value="NP">Népal</option>
+                                    <option value="NI">Nicaragua</option>
+                                    <option value="NE">Niger</option>
+                                    <option value="NG">Nigéria</option>
+                                    <option value="NU">Niué</option>
+                                    <option value="NO">Norvège</option>
+                                    <option value="NC">Nouvelle-Calédonie</option>
+                                    <option value="NZ">Nouvelle-Zélande</option>
+                                    <option value="IO">Océan Indien Britannique</option>
+                                    <option value="OM">Oman</option>
+                                    <option value="UG">Ouganda</option>
+                                    <option value="UZ">Ouzbékistan</option>
+                                    <option value="PK">Pakistan</option>
+                                    <option value="PW">Palaos</option>
+                                    <option value="PS">Palestine</option>
+                                    <option value="PA">Panama</option>
+                                    <option value="PG">Papouasie-Nouvelle-Guinée</option>
+                                    <option value="PY">Paraguay</option>
+                                    <option value="NL">Pays-Bas</option>
+                                    <option value="PE">Pérou</option>
+                                    <option value="PH">Philippines</option>
+                                    <option value="PL">Pologne</option>
+                                    <option value="PF">Polynésie française</option>
+                                    <option value="PR">Porto Rico</option>
+                                    <option value="PT">Portugal</option>
+                                    <option value="QA">Qatar</option>
+                                    <option value="CF">République Centrafricaine</option>
+                                    <option value="CD">République démocratique du Congo</option>
+                                    <option value="DO">République Dominicaine</option>
+                                    <option value="CG">République du Congo</option>
+                                    <option value="CZ">République Tchèque</option>
+                                    <option value="TZ">République unie de Tanzanie</option>
+                                    <option value="RE">Réunion</option>
+                                    <option value="RO">Roumanie</option>
+                                    <option value="SZ">Royaume d'Eswatini</option>
+                                    <option value="GB">Royaume-Uni</option>
+                                    <option value="RU">Russie</option>
+                                    <option value="RW">Rwanda</option>
+                                    <option value="EH">Sahara occidental</option>
+                                    <option value="BL">Saint-Barthélemy</option>
+                                    <option value="KN">Saint-Christophe-et-Niévès</option>
+                                    <option value="SM">Saint-Marin</option>
+                                    <option value="MF">Saint-Martin (partie française)</option>
+                                    <option value="SX">Saint-Martin (partie néerlandaise)</option>
+                                    <option value="PM">Saint-Pierre-et-Miquelon</option>
+                                    <option value="VA">Saint-Siège (Vatican)</option>
+                                    <option value="VC">Saint-Vincent-et-les-Grenadines</option>
+                                    <option value="SH">Sainte-Hélène</option>
+                                    <option value="LC">Sainte-Lucie</option>
+                                    <option value="WS">Samoa</option>
+                                    <option value="AS">Samoa américaines</option>
+                                    <option value="ST">São Tomé-et-Principe</option>
+                                    <option value="SN">Sénégal</option>
+                                    <option value="RS">Serbie</option>
+                                    <option value="SC">Seychelles</option>
+                                    <option value="SL">Sierra Leone</option>
+                                    <option value="SG">Singapour</option>
+                                    <option value="SK">Slovaquie</option>
+                                    <option value="SI">Slovénie</option>
+                                    <option value="SO">Somalie</option>
+                                    <option value="SD">Soudan</option>
+                                    <option value="SS">Soudan du Sud</option>
+                                    <option value="LK">Sri Lanka</option>
+                                    <option value="SE">Suède</option>
+                                    <option value="CH">Suisse</option>
+                                    <option value="SR">Suriname</option>
+                                    <option value="SJ">Svalbard et Île Jan Mayen</option>
+                                    <option value="SY">Syrie</option>
+                                    <option value="TJ">Tadjikistan</option>
+                                    <option value="TW">Taïwan</option>
+                                    <option value="TD">Tchad</option>
+                                    <option value="TF">Terres australes françaises</option>
+                                    <option value="TH">Thaïlande</option>
+                                    <option value="TL">Timor-Leste</option>
+                                    <option value="TG">Togo</option>
+                                    <option value="TK">Tokelau</option>
+                                    <option value="TO">Tonga</option>
+                                    <option value="TT">Trinité-et-Tobago</option>
+                                    <option value="TN">Tunisie</option>
+                                    <option value="TM">Turkménistan</option>
+                                    <option value="TR">Turquie</option>
+                                    <option value="TV">Tuvalu</option>
+                                    <option value="UA">Ukraine</option>
+                                    <option value="UY">Uruguay</option>
+                                    <option value="VU">Vanuatu</option>
+                                    <option value="VE">Venezuela</option>
+                                    <option value="VN">Vietnam</option>
+                                    <option value="WF">Wallis-et-Futuna</option>
+                                    <option value="YE">Yémen</option>
+                                    <option value="ZM">Zambie</option>
+                                    <option value="ZW">Zimbabwe</option>
+                                </select><span class="hide-error">France</span><label class="">Pays</label>
+                                <div class="img-arrow-down"></div>
+                            </div><input type="hidden" id="countryName" name="countryName" value="France"><input
+                                type="hidden" id="countryCode" name="countryCode" value="FR"><input
+                                type="hidden" id="typeAddress" name="typeAddress" value="part"><input
+                                type="hidden" id="addressAutoCompleted" name="addressAutoCompleted"
+                                value="false"><input type="hidden" id="step" name="step" value="address">
+                            <p class="subtitle">Instructions pour la livraison</p>
+                            <div class="input "><input class="  hide-error" type="text" name="building"
+                                    id="building" aria-required="false" autocapitalize="none" value=""><span
+                                    class="hide-error" id="">Bâtiment, résidence <small
+                                        class="optional">(facultatif)</small></span></div>
+                            <div class="input "><input class="  hide-error" type="text" name="floor" id="floor"
+                                    aria-required="false" autocapitalize="none" value=""><span
+                                    class="hide-error" id="">Appartement, étage <small
+                                        class="optional">(facultatif)</small></span></div>
+                            <div class="input "><input class="  hide-error" type="text" name="digicode"
+                                    id="digicode" aria-required="false" autocapitalize="none" value=""><span
+                                    class="hide-error" id="">Digicode, gardien... <small
+                                        class="optional">(facultatif)</small></span></div>
+                            <p class="subtitle">Nom de l'adresse</p>
+                            <div class="input "><input class="  hide-error" type="text" name="title" id="title"
+                                    aria-required="false" autocapitalize="none" value=""><span
+                                    class="hide-error" id="">Maison, bureau... <small
+                                        class="optional">(facultatif)</small></span></div>
+                        </div>
+                        <div class="form-action"><input id="submit" disabled="" name="submit" role="button"
+                                type="submit" value="Enregistrer"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="wrapper">
+                <div class="context">
+                    <div class="context-content">
+                        <img class="logo--client"
+                            src="./Se connecter à laposte.fr_files/default-logo.b26e0bd7a1ee5e08c5635de46bce26b7.svg"
+                            alt="laposte.fr" data-xblocker="passed" style="visibility: visible;">
+                        <p>Avec <b>Mon Compte</b>,<br>La Poste me simplifie<br>la vie au quotidien.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="kc-info" class="">
+                <div id="kc-info-wrapper" class="">
+                </div>
+            </div>
+        </div>
+        <div id="lSelectOpts">
+            <ul>
+                <li>
+                    <a
+                        href="https://moncompte.laposte.fr/moncompte-auth/auth/realms/mon-compte/login-actions/required-action?client_id=8e43f72a1f94ab61b909fa49548c800d&amp;tab_id=fe66hlFQdxw&amp;execution=mon_compte_collect_address&amp;kc_locale=en">
+                        English
+                    </a>
+                </li>
+                <li class="current">
+                    <a
+                        href="https://moncompte.laposte.fr/moncompte-auth/auth/realms/mon-compte/login-actions/required-action?client_id=8e43f72a1f94ab61b909fa49548c800d&amp;tab_id=fe66hlFQdxw&amp;execution=mon_compte_collect_address&amp;kc_locale=fr">
+                        Français
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <footer class="footer">
+            <div id="legal-info">
+                <p class="resume"><span>Vos données sont collectées par La Poste pour assurer la gestion de votre Compte
+                        La Poste, le bon fonctionnement de vos services, la gestion de vos achats et contrats, la
+                        distribution de vos envois postaux et l'animation commerciale. Pour plus d'informations sur vos
+                        données et vos droits, voir le <u><a target="_blank"
+                                href="https://www.laposte.fr/mentions-informations-a-l-inscription">traitement de vos
+                                données personnelles</a></u>.</span></p>
+            </div>
+            <script type="text/javascript"
+                src="./Se connecter à laposte.fr_files/legal_info.0abddecbf686517be506.js.download"></script>
+            <div class="footer-container">
+                <div class="footer-list">
+                    <div class="language-wrapper">
+                        <div id="lSelectCaption">
+                            <span class="desktop-text">Français</span>
+                            <span class="mobile-text">FR</span>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                    <a target="_blank" class="cgu"
+                        href="https://moncompte.laposte.fr/moncompte-auth/auth/resources/nyi1u/login/moncompte/cgu.html">
+                        <span class="desktop-text">Conditions Générales d'Utilisation</span>
+                        <span class="mobile-text">CGU</span>
+                    </a>
+                    <div class="separator"></div>
+                    <a target="_blank" href="https://www.laposte.fr/accessibilite-particuliers">
+                        Accessibilité
+                    </a>
+                    <div class="separator"></div>
+                    <a target="_blank" class="aide-contact"
+                        href="https://aide.laposte.fr/categorie/mes-commandes-mon-espace-client/mon-compte/connexion">
+                        Aide et contact
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script type="text/javascript"
+        src="./Se connecter à laposte.fr_files/add_address.a11ff8825e2bb1b508c3.js.download"></script>
+    <script type="text/javascript"
+        src="./Se connecter à laposte.fr_files/commons.149266743c0fb8f8546d.js.download"></script>
+    <script type="text/javascript">
+        const lSelectCurrent = document.querySelector('#lSelectCaption');
+        const elem = document.querySelector('#lSelectOpts ul');
+        window.onclick = function (event) {
+            const closest = event.target.closest('div#lSelectCaption');
+            if (closest == lSelectCurrent && !elem.classList.contains('visible')) {
+                elem.classList.add("visible");
+            } else {
+                elem.classList.remove("visible");
+            }
+        }
+    </script>
+    <script type="text/javascript" src="./Se connecter à laposte.fr_files/tc_LaboutiqueLaPoste_6.js.download"
+        async=""></script>
+    <noscript><iframe src="//redirect1491.tagcommander.com/utils/noscript.php?id=6&amp;mode=iframe" width="1" height="1"
+            rel="noindex,nofollow"></iframe></noscript>
+
+
+    <iframe name="__tcfapiLocator" style="display: none;"
+        src="./Se connecter à laposte.fr_files/saved_resource.html"></iframe>
+</body>
+
+</html>
